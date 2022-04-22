@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Library CSS-->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
+
+<!--CSS Customizado-->
+    <link rel="stylesheet" href="./css/style-custom.css">
+
+    <title>Webstore - Moda Feminina</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="caption">
+                            <h2>Nova Coleção</h2>
+                            <div class="line-dec"></div>
+                            <p>Confira agora os itens da nossa nova coleção!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="featured" class="featured-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Produtos em destaque</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="featured-item">
+                                <img src="./img/item-01.jpg" alt="Item 1">
+                                <h4>Produto 1</h4>
+                                <h6>R$ 20,00</h6>
+                                <a  class="btn btn-dark" href="#">Comprar</a>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./img/item-02.jpg" alt="Item 2">
+                                <h4>Produto 2</h4>
+                                <h6>R$ 20,00</h6>
+                                <a class="btn btn-dark" href="#">Comprar</a>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./img/item-03.jpg" alt="Item 3">
+                                <h4>Produto 3</h4>
+                                <h6>R$ 20,00</h6>
+                                <a class="btn btn-dark" href="#">Comprar</a>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./img/item-04.jpg" alt="Item 4">
+                                <h4>Produto 4</h4>
+                                <h6>R$ 20,00</h6>
+                                <a class="btn btn-dark" href="#">Comprar</a>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./img/item-05.jpg" alt="Item 5">
+                                <h4>Produto 5</h4>
+                                <h6>R$ 20,00</h6>
+                                <a class="btn btn-dark" href="#">Comprar</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Receba novidades</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="main-content">
+                            <p>Insira seus dados para receber informações atualizadas de nossos produtos</p>
+                            <div class="container">
+                                <form id="subscribe" class="form" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <fieldset>
+                                                <input name="email" type="text" class="form-control" id="email" value="" placeholder="Digite seu e-mail" >
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#top">Home</a></li>
+                                <li><a href="#produtos">Produtos</a></li>
+                                <li><a href="#sobre" rel="sobre" class="nav-modal-open">Sobre Nós</a></li>
+                                <li><a href="#contato" rel="contato" class="nav-modal-open">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>WebStore &copy; Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Começo do Modal  -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">              
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contato" class="visually-hidden">
+                <form action="post" class="myForm" id="myForm">
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                        <small>*Campo Obrigatório</small>
+                        <p id="errorNome"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                        <small>*Campo Obrigatório</small>
+                        <p id="errorEmail"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Data</label>
+                        <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="time" class="form-label">Hora</label>
+                        <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCEP">
+                        <small>*Campo Obrigatório</small>
+                        <p id="errorCep"></p>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="text" name="celular" id="celular" class="form-control" placeholder="Digite seu celular" aria-describedby="helpCelular">
+                        <small>*Campo Obrigatório</small>
+                        <p id="errorCelular"></p>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF">
+                        <small>*Campo Obrigatório</small>
+                        <p id="errorCpf"></p>
+
+                    </div>
+                    <button type="submit" id="submitButton"class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <div id="sobre" class="visually-hidden">Loja especializada em moda feminina</div>
+        <!-- FIM do Modal-->
+        
+        <!--Library-->
+            <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+            <script src="./vendor/jquery-validate/jquery.validate.js"></script>
+            <script src="./vendor/jquery-mask/jquery.mask.js"></script>
+            <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="./vendor/owl/owl.carousel.js"></script>
+            <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
+
+        <!--Script Customizado-->
+            <script src="./js/custom.js"></script>
+    </body>
+</html>
