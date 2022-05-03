@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--Library CSS-->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
-    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/owl/css/owl.css">
+    <link rel="stylesheet" href="./assets/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./assets/jquery-ui/jquery-ui.css">
 
 <!--CSS Customizado-->
-    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link rel="stylesheet" href="./src/css/style-custom.css">
 
     <title>Webstore - Moda Feminina</title>
 </head>
@@ -20,7 +20,7 @@
 <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./src/img/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#produtos">Produtos</a>
+                            <a class="nav-link" href="#produtosdestaque" >Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre nós</a>
@@ -68,38 +68,56 @@
                     </div>
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme">
-                            <div class="featured-item">
-                                <img src="./src/img/item-01.jpg" alt="Item 1">
+                            <div class="featured-item" id="produtosdestaque">
+                                <img src="./img/item-01.jpg" alt="Item 1">
                                 <h4>Produto 1</h4>
                                 <h6>R$ 20,00</h6>
-                                <a  class="btn btn-dark" href="#">Comprar</a>
+                                <a class="btn btn-dark nav-modalProdutos" href="#item 1" rel="item 1">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/img/item-02.jpg" alt="Item 2">
+                                <img src="./img/item-02.jpg" alt="Item 2">
                                 <h4>Produto 2</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark" href="#">Comprar</a>
+                                <a class="btn btn-dark nav-modalProdutos" href="#item2">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/img/item-03.jpg" alt="Item 3">
+                                <img src="./img/item-03.jpg" alt="Item 3">
                                 <h4>Produto 3</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark" href="#">Comprar</a>
+                                <a class="btn btn-dark nav-modalProdutos" href="#item3" rel="item3">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/img/item-04.jpg" alt="Item 4">
+                                <img src="./img/item-04.jpg" alt="Item 4">
                                 <h4>Produto 4</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark" href="#">Comprar</a>
+                                <a class="btn btn-dark nav-modalProdutos" href="#item4" rel="item4">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/img/item-05.jpg" alt="Item 5">
+                                <img src="./img/item-05.jpg" alt="Item 5">
                                 <h4>Produto 5</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark" href="#">Comprar</a>
+                                <a class="btn btn-dark nav-modalProdutos" href="#item5" rel="item5">Comprar</a>
                             </div>
-
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produtos -->
+        <div class="modal fade" id="modelProdutos" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modalHeader">
+                                <h5 class="modalTitle">Item para compra</h5>
+                            </div>
+                    <div class="modalBody">
+                        <div class="container-fluid">
+                            Página em construção
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -144,7 +162,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo">
-                            <img src="./src/img/logo.png" alt="logo">
+                            <img src="./img/logo.png" alt="logo">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -201,49 +219,49 @@
 
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                        <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome" minlength="2">
                         <small>*Campo Obrigatório</small>
-                        <p id="errorNome"></p>
+                        <p id="msg_errorNome"></p>
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
                         <small>*Campo Obrigatório</small>
-                        <p id="errorEmail"></p>
+                        <p id="msg_errorEmail"></p>
                     </div>
 
                     <div class="mb-3">
                         <label for="date" class="form-label">Data</label>
-                        <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
+                        <input type="date" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
                     </div>
 
                     <div class="mb-3">
                         <label for="time" class="form-label">Hora</label>
-                        <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+                        <input type="time" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
                     </div>
 
                     <div class="mb-3">
                         <label for="cep" class="form-label">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCEP">
+                        <input type="number" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCEP">
                         <small>*Campo Obrigatório</small>
-                        <p id="errorCep"></p>
+                        <p id="msg_errorCep"></p>
 
                     </div>
 
                     <div class="mb-3">
                         <label for="celular" class="form-label">Celular</label>
-                        <input type="text" name="celular" id="celular" class="form-control" placeholder="Digite seu celular" aria-describedby="helpCelular">
+                        <input type="number" name="celular" id="celular" class="form-control" placeholder="Digite seu celular" aria-describedby="helpCelular">
                         <small>*Campo Obrigatório</small>
-                        <p id="errorCelular"></p>
+                        <p id="msg_errorCelular"></p>
 
                     </div>
 
                     <div class="mb-3">
                         <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF">
+                        <input type="number" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF">
                         <small>*Campo Obrigatório</small>
-                        <p id="errorCpf"></p>
+                        <p id="msg_errorCpf"></p>
 
                     </div>
                     <button type="submit" id="submitButton"class="btn btn-primary">Enviar</button>
@@ -254,13 +272,13 @@
         <!-- FIM do Modal-->
         
         <!--Library-->
-            <script src="./node_modules/jquery/dist/jquery.js"></script>
-            <script src="./vendor/jquery-mask/jquery.mask.js"></script>
-            <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="./vendor/owl/owl.carousel.js"></script>
-            <script src="./vendor/jquery-ui/jquery-ui.js"></script>
+            <script src="./assets/jquery/jquery-3.6.0.js"></script>
+            <script src="./assets/jquery-ui/jquery-ui.js"></script>
+            <script src="./assets/bootstrap/js/bootstrap.js"></script>
+            <script src="./assets/owl/owl.carousel.js"></script>
+            <script src="./assets/jquery-ui/jquery-ui.js"></script>
 
         <!--Script Customizado-->
-            <script src="./dist/js/scripts.min.js"></script>
+            <script src="./src/js/custom.js"></script>
     </body>
 </html>

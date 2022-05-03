@@ -314,11 +314,11 @@ a {
 	border: none;
 }
 
-#errorNome, 
-#errorEmail,
-#errorCep,
-#errorCelular,
-#errorCpf {
+#msg_errorNome, 
+#msg_errorEmail,
+#msg_errorCep,
+#msg_errorCelular,
+#msg_errorCpf {
     color: red;
 	padding: .3rem;
 }
