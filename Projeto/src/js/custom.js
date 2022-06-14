@@ -59,22 +59,22 @@ $('.nav-modalProdutos').on('click', function(e){
 * Validation
 */
 
-function validate( elem ){
+function validate(elem){
    if( elem.val() == '') {
       console.log('O campo de '+ elem.attr('name') + ' é obrigatório.')
 
       elem.parent().find('#textRequired').show()
-      elem.addClass('invalid')
-
+      elem.addClass('invalid');
+      $('#submitButton').prop('disabled', true)
       return false
    } else {
       elem.parent().find('#textRequired').hide()
       elem.removeClass('invalid')
+      $('#submitButton').prop('disabled', false)
    }
 }
 
 $('body').on('submit', '.modal-body #myForm', function(e){
-
    e.preventDefault()
 
    const inputName = $('#name')

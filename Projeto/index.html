@@ -17,15 +17,14 @@
     <title>Webstore - Moda Feminina</title>
 </head>
 
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-                <a class="navbar-brand" href="#"><img src="./src/images/logo.png" alt="logo"></a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="container">
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavId">
+                    <ul class="navbar-nav md-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -70,34 +69,34 @@
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme">
                             <div class="featured-item" id="produtosdestaque">
-                                <img src="./src/images/item-01.jpg" alt="Item 1">
+                                <img src="./img/item-01.jpg" alt="Item 1">
                                 <h4>Produto 1</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark nav-modalProdutos" href="#item 1" rel="item 1">Comprar</a>
+                                <a class="btn btn-dark btn-md btn-md nav-modalProdutos" href="#item 1" rel="item 1">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/images/item-02.jpg" alt="Item 2">
+                                <img src="./img/item-02.jpg" alt="Item 2">
                                 <h4>Produto 2</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark nav-modalProdutos" href="#item2">Comprar</a>
+                                <a class="btn btn-dark btn-md nav-modalProdutos" href="#item2">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/images/item-03.jpg" alt="Item 3">
+                                <img src="./img/item-03.jpg" alt="Item 3">
                                 <h4>Produto 3</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark nav-modalProdutos" href="#item3" rel="item3">Comprar</a>
+                                <a class="btn btn-dark btn-md nav-modalProdutos" href="#item3" rel="item3">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/images/item-04.jpg" alt="Item 4">
+                                <img src="./img/item-04.jpg" alt="Item 4">
                                 <h4>Produto 4</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark nav-modalProdutos" href="#item4" rel="item4">Comprar</a>
+                                <a class="btn btn-dark btn-md nav-modalProdutos" href="#item4" rel="item4">Comprar</a>
                             </div>
                             <div class="featured-item">
-                                <img src="./src/images/item-05.jpg" alt="Item 5">
+                                <img src="./img/item-05.jpg" alt="Item 5">
                                 <h4>Produto 5</h4>
                                 <h6>R$ 20,00</h6>
-                                <a class="btn btn-dark nav-modalProdutos" href="#item5" rel="item5">Comprar</a>
+                                <a class="btn btn-dark btn-md nav-modalProdutos" href="#item5" rel="item5">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -141,7 +140,7 @@
                                     <div class="row">
                                         <div class="col-md-7">
                                             <fieldset>
-                                                <input name="Email" type="text" class="form-control" id="Email" value="" placeholder="Digite seu e-mail" >
+                                                <input name="Email" type="email" class="form-control" id="Email" value="" placeholder="Digite seu e-mail" >
                                             </fieldset>
                                         </div>
                                         <div class="col-md-5">
@@ -163,7 +162,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo">
-                            <img src="./src/images/logo.png" alt="logo">
+                            <img src="./img/logo.png" alt="logo">
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -226,7 +225,7 @@
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" name="email" id="email" title="Insira seu email completo" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                        <input type="email" name="email" id="email" title="Insira seu email completo" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
                         <p id="textRequired">*Campo Obrigatório.</p>
                     </div>
 
@@ -258,7 +257,7 @@
                         <input type="number" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF">
                         <p id="textRequired">*Campo Obrigatório.</p>
                     </div>
-                    <button type="submit" id="submitButton"class="btn btn-primary">Enviar</button>
+                    <button type="submit" id="submitButton" class="btn btn-primary" disabled="disabled">Enviar</button>
                 </form>
             </div>
 
