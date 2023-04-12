@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Library CSS-->
+    <link rel="stylesheet" href="./dist/css/libs.min.css">
+    <link rel="stylesheet" href="./biblioteca/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./biblioteca/jquery-ui/jquery-ui.min.css">
+
+<!--CSS Customizado-->
+    <link rel="stylesheet" href="./css/style-custom.css">
+
+    <title>Mariana Vianna - Projetos 3D</title>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/design/logo ret.png" alt="logo"></a>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavId">
+                    <ul class="navbar-nav md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetosEmDestaque">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>PROJETOS EM 3D</h2>
+                        <div class="line-dec"></div>
+                        <p>Confira abaixo alguns dos projetos já executados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tituloDestaque">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h1>Projetos em destaque</h1>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+
+                <section class="gallery">
+                    <div class="featured-item" id="projetosEmDestaque">
+                        <div class="container-lg">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header"><h4>Quarto Helena e Laura (2015)</h4></div>
+                                        <div class="card-body">
+                                            <a class="nav-galleryImg" rel="proj-1"><img src="./img/projetos/Quarto Meninas_Thumb.png" class="modal-img" alt="proj-1"></a>
+                                        </div>
+                                        <div class="card-footer"><p><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></p></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header"><h4>Quarto Laura (2022)
+                                        </h4></div>
+                                        <div class="card-body">
+                                            <a class="nav-galleryImg" rel="proj-2"><img src="./img/projetos/Quarto Laura_Thumb.png" class="modal-img" alt="proj-2"></a>
+                                        </div>
+                                        <div class="card-footer"><p><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></p></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header"><h4>Quarto Helena (2022)
+                                        </h4></div>
+                                        <div class="card-body">
+                                            <a class="nav-galleryImg" rel="proj-3"><img src="./img/projetos/Quarto Helena_Thumb.png" class="modal-img" alt="proj-3"></a>
+                                        </div>
+                                        <div class="card-footer"><p><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></p></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header"><h4>Sala de estar/Adega
+                                        </h4></div>
+                                        <div class="card-body">
+                                            <a class="nav-galleryImg" rel="proj-4"><img src="./img/projetos/Sala e Adega_Thumb.png" class="modal-img" alt="proj-4"></a>
+                                        </div>
+                                        <div class="card-footer"><p><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></p></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header"><h4>Sala de estar/Escritório
+                                        </h4></div>
+                                        <div class="card-body">
+                                            <a class="nav-galleryImg" rel="proj-5"><img src="./img/projetos/Sala Escritório_Thumb.png" class="modal-img" alt="proj-5"></a>
+                                        </div>
+                                        <div class="card-footer"><p><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></p></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Começo Modal - Projetos -->
+        <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modalTitle"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modalBody">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="proj-1" class="visually-hidden">
+            <img src="./img/projetos/Quarto Meninas.png" class="modal-img" alt="proj-1">
+        </div>
+        <div id="proj-2" class="visually-hidden">
+            <img src="./img/projetos/Quarto Laura.png" class="modal-img" alt="proj-2">
+        </div>
+        <div id="proj-3" class="visually-hidden">
+            <img src="./img/projetos/Quarto Helena.png" class="modal-img" alt="proj-3">
+        </div>
+        <div id="proj-4" class="visually-hidden">
+            <img src="./img/projetos/Sala e Adega.png" class="modal-img" alt="proj-4">
+        </div>
+        <div id="proj-5" class="visually-hidden">
+            <img src="./img/projetos/Sala Escritório.png" class="modal-img" alt="proj-5">
+        </div>
+    <!--Final Modal - Projetos -->
+
+
+        <div class="subscribe-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Entre em Contato</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 offset-md-2">
+                        <div class="main-content">
+                            <p>Insira seu e-mail e entre em contato</p>
+                            <div class="container">
+                                <form id="subscribe" class="form" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <fieldset>
+                                                <input name="emailForm" type="emailForm" class="form-control" id="emailForm" value="" placeholder="Digite seu e-mail" >
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="button">Enviar</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <img src="./img/design/logo quadrado.png" alt="logo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#top">Home</a></li>
+                                <li><a href="#projetosEmDestaque">Projetos</a></li>
+                                <li><a href="#sobre" rel="sobre" class="nav-modal-open">Sobre Nós</a></li>
+                                <li><a href="#contato" rel="contato" class="nav-modal-open">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>WebStore &copy; Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Começo do Modal - Contato  -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">              
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contato" class="visually-hidden">
+                <form action="post" class="myForm" id="myForm">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" name="name" id="name" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                        <p id="textRequired">*Campo Obrigatório.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" title="Insira seu email completo" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                        <p id="textRequired">*Campo Obrigatório.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="number" name="celular" id="celular" class="form-control" placeholder="Digite seu celular (apenas números)" aria-describedby="helpCelular">
+                        <p id="textRequired">*Campo Obrigatório.</p>
+                    </div>
+                    <button type="submit" id="submitButton" class="btn btn-primary" disabled="disabled">Enviar</button>
+                </form>
+            </div>
+
+            <div id="sobre" class="visually-hidden">Mariana Vianna - Projetos 3D</div>
+        <!-- Fim do Modal - Contato -->
+        
+        <!--Library-->
+            <script src="./biblioteca/jquery/jquery-3.6.0.min.js"></script>
+            <script src="./biblioteca/jquery-mask/jquery.mask.js"></script>
+            <script src="./biblioteca/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="./biblioteca/jquery-ui/jquery-ui.min.js"></script>
+
+        <!--Script Customizado-->
+            <script src="./js/custom.js"></script>
+    </body>
+</html>
